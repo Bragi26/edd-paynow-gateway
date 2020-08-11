@@ -1,6 +1,6 @@
 # Payment Gateway for Paynow on Easy Digital Downloads
 
-###This is a gateway extension for Easy Digital Downloads plugin to accept Paynow payments in your store
+### This is a gateway extension for Easy Digital Downloads plugin to accept Paynow payments in your store
 
 ## Description 
 
