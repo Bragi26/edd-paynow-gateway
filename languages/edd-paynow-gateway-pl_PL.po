@@ -1,0 +1,108 @@
+# Copyright (C) 2020 Piotr Włoch
+# This file is distributed under the same license as the Payment Gateway for Paynow on Easy Digital Downloads plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Payment Gateway for Paynow on Easy Digital Downloads "
+"1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/edd-paynow-"
+"payments\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-08-11T02:17:19+00:00\n"
+"PO-Revision-Date: 2020-08-12 01:11+0200\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Domain: edd-paynow-payments\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n"
+"%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: pl_PL\n"
+
+#. Plugin Name of the plugin
+msgid "Payment Gateway for Paynow on Easy Digital Downloads"
+msgstr "Bramka Płatności dla Paynow do Easy Digital Downloads"
+
+#. Description of the plugin
+msgid "A Paynow payment gateway for Easy Digital Downloads Wordpress plugin"
+msgstr "Paynow bramka płatności dla Easy Digital Downloads Wordpress plugin"
+
+#. Author of the plugin
+msgid "Piotr Włoch"
+msgstr "Piotr Włoch"
+
+#. Author URI of the plugin
+msgid "pwloch.eu"
+msgstr "pwloch.eu"
+
+#: src/EDD/Payments/Paynow/Paynow.php:85 src/EDD/Payments/Paynow/Paynow.php:86
+msgid "Paynow"
+msgstr "Paynow"
+
+#: src/EDD/Payments/Paynow/Paynow.php:101
+msgid "Paynow Payments"
+msgstr "Paynow Płatności"
+
+#: src/EDD/Payments/Paynow/Paynow.php:114
+msgid "Paynow Payment Settings"
+msgstr "Ustawiena płatności Paynow"
+
+#: src/EDD/Payments/Paynow/Paynow.php:119
+msgid "Api Key"
+msgstr "Klucz Api"
+
+#: src/EDD/Payments/Paynow/Paynow.php:126
+msgid "Secret Key"
+msgstr "Prywatny Klucz"
+
+#: src/EDD/Payments/Paynow/Paynow.php:188
+msgid "There is an error with Paynow Payments configuration."
+msgstr "Wystąpił błąd w konfiguracji płatności Paynow."
+
+#: src/EDD/Payments/Paynow/Paynow.php:198
+msgid "Nonce verification has failed"
+msgstr "Weryfikacja jednorazowa nie powiodła się"
+
+#: src/EDD/Payments/Paynow/Paynow.php:198
+msgid "Error"
+msgstr "Błąd"
+
+#: src/EDD/Payments/Paynow/Paynow.php:215
+#: src/EDD/Payments/Paynow/Paynow.php:263
+msgid "Payment Error"
+msgstr "Błąd Płatności"
+
+#: src/EDD/Payments/Paynow/Paynow.php:215
+msgid ""
+"Payment creation failed before sending buyer to Paynow. Payment data: %s"
+msgstr ""
+"Utworzenie płatności nie powiodło się przed wysłaniem kupującego do Paynow. "
+"Dane płatności: %s"
+
+#: src/EDD/Payments/Paynow/Paynow.php:230
+msgid "Order: "
+msgstr "Zamówienie: "
+
+#: src/EDD/Payments/Paynow/Paynow.php:263
+msgid ""
+"Payment creation failed while processing a Paynow payment gateway purchase. "
+"Payment data: %s"
+msgstr ""
+"Utworzenie płatności nie powiodło się poprzez bramkę płatności Paynow. Dane "
+"płatności: %s"
+
+#: src/EDD/Payments/Paynow/Paynow.php:305
+msgid "Payment done via Paynow with transaction id "
+msgstr "Płatność za pośrednictwem Paynow z identyfikatorem transakcji "
+
+#: src/EDD/Payments/Paynow/Paynow.php:309
+msgid "Paynow payment pending with transaction id "
+msgstr "Oczekująca płatność Paynow z identyfikatorem transakcji "
+
+#: src/EDD/Payments/Paynow/Paynow.php:313
+msgid "Paynow payment failed with transaction id "
+msgstr "Płatność Paynow nie powiodła się z identyfikatorem transakcji "
+
+#: src/EDD/Payments/Paynow/Paynow.php:317
+msgid "Error occured during Paynow payment with transaction id "
+msgstr "Wystąpił błąd podczas płatności Paynow z identyfikatorem transakcji "
