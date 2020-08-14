@@ -2,7 +2,7 @@
 Contributors: Piotr Włoch
 Tags: edd, easy digital downloads, payments, payment gateway, paynow, online payments, polish payment gateway
 Requires at least: 4.9
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GPLv3 or later
