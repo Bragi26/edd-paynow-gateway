@@ -186,6 +186,11 @@ class Paynow {
 		}
 	}
 
+	/**
+	 * Returns order amount
+	 * @param float $total
+	 * @return integer
+	 */
 	public function getAmount( $total ) {
 		return absint( edd_format_amount( ((float) $total * 100 ) ) );
 	}
