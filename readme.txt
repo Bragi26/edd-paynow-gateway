@@ -31,6 +31,12 @@ No, Paynow payment gateway does not support the recurring payments for now.
 4. Visit the Easy Digital Downloads payment gateway settings and select the Payment gateways you want to activate in your checkout page.
 5. Select the payment icons you want to be visible on the checkout page.
 
+== Screenshots ==
+
+1. Activate/Deactivate the payment gateway settings.
+2. Paynow payment gateway settings.
+3. Checkout page.
+
 == Changelog ==
 
 = 1.0.0 = 

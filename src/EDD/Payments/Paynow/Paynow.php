@@ -186,6 +186,10 @@ class Paynow {
 		}
 	}
 
+	public function getAmount( $total ) {
+		return absint( edd_format_amount( ((float) $total * 100 ) ) );
+	}
+
 	/**
 	 * Process Paynow payment data and redirects to Paynow site
 	 * @param array $purchase_data
@@ -220,8 +224,10 @@ class Paynow {
 				'paynow-listener' => 'ipn',
 					), get_permalink( edd_get_option( 'success_page', false ) ) );
 
+			$price = $this->getAmount( $purchase_data['price'] );
+			
 			$paynow_payment = [
-				'amount' => $purchase_data['price'] * 100,
+				'amount' => $price,
 				'currency' => edd_get_currency(),
 				'externalId' => $payment_id,
 				'description' => __( 'Order: ', 'edd-paynow-gateway' ) . $payment_id,

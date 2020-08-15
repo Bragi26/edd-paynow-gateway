@@ -23,6 +23,12 @@ The plugin requires API keys which can be acquired from the Paynow [account sett
 
 No, Paynow payment gateway does not support the recurring payments for now.
 
+## Screenshots 
+
+1. Activate/Deactivate the payment gateway settings.
+2. Paynow payment gateway settings.
+3. Checkout page.
+
 ## Changelog 
 
 #### 1.0.0 
