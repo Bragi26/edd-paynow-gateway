@@ -33,3 +33,6 @@ No, Paynow payment gateway does not support the recurring payments for now.
 
 #### 1.0.0 
 Initial release
+
+#### 1.0.1 
+Fixing minor issues
