@@ -1,3 +1,18 @@
+## 2.1.3
+- Added new statuses for payment
+
+## 2.1.2
+- Added PSR17 client discovery support
+
+## 2.1.1
+- Added filters to retrieve payment methods
+- Added Google Pay to payment method types
+- Updated dependencies
+
+## 2.1.0
+- Added payment's refund support
+- Added retrieve available payment methods
+
 ## 2.0.2
 - Initialize `$errors` in `PaynowException` as empty list
 

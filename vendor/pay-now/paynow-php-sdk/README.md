@@ -42,12 +42,12 @@ $orderReference = "success_1234567";
 $idempotencyKey = uniqid($orderReference . '_');
 
 $paymentData = [
-    "amount" => "100",
-    "currency" => "PLN",
-    "externalId" => $orderReference,
-    "description" => "Payment description",
-    "buyer" => [
-        "email" => "customer@domain.com"
+    'amount' => '100',
+    'currency' => 'PLN',
+    'externalId' => $orderReference,
+    'description' => 'Payment description',
+    'buyer' => [
+        'email' => 'customer@domain.com'
     ]
 ];
 
@@ -75,6 +75,41 @@ try {
 }
 
 header('HTTP/1.1 202 Accepted', true, 202);
+```
+
+Making a payment's refund
+```php
+use Paynow\Client;
+use Paynow\Environment;
+use Paynow\Exception\PaynowException;
+use Paynow\Service\Refund;
+
+$client = new Client('TestApiKey', 'TestSignatureKey', Environment::SANDBOX);
+
+try {
+    $refund = new Refund($client);
+    $result = $refund->create('YXZA-123-ABC-A01', uniqid(), 100);
+} catch (PaynowException $exception) {
+    // catch errors
+}
+```
+
+Retrieving available payment methods
+```php
+use Paynow\Client;
+use Paynow\Environment;
+use Paynow\Exception\PaynowException;
+use Paynow\Service\Payment;
+
+$client = new Client('TestApiKey', 'TestSignatureKey', Environment::SANDBOX);
+
+try {
+    $payment = new Payment($client);
+    $paymentMethods = $payment->getPaymentMethods('PLN', 100);
+    $availablePaymentMethods = $paymentMethods->getAll();
+} catch (PaynowException $exception) {
+    // catch errors
+}
 ```
 
 ## Documentation

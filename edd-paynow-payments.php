@@ -4,7 +4,7 @@
  * Plugin Name: Payment Gateway for Paynow on Easy Digital Downloads
  * Plugin URI: https://github.com/Bragi26/edd-paynow-gateway
  * Description: A Paynow payment gateway for Easy Digital Downloads Wordpress plugin
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Piotr Włoch
  * Author URI: pwloch.eu
  * License: GPLv3
@@ -27,7 +27,7 @@
  */
 
 if (!defined('EDD_PAYNOW_PAYMENTS_VERSION')) {
-    define('EDD_PAYNOW_PAYMENTS_VERSION', '1.0.0');
+    define('EDD_PAYNOW_PAYMENTS_VERSION', '1.0.1');
 }
 
 if (!defined('EDD_PAYNOW_PAYMENTS_DIR')) {

@@ -3,7 +3,7 @@
   "errors": [
     {
       "errorType": "NOT_FOUND",
-      "message": "Could not find status for payment {paymentId=PBYV-3AZ-UPW-DPCf}"
+      "message": "Could not find status for payment {paymentId=PBYV-3AZ-UPW-DPC}"
     }
   ]
 }

@@ -2,6 +2,8 @@
 
 namespace Paynow\HttpClient;
 
+use Http\Discovery\Exception\NotFoundException;
+use Http\Discovery\HttpClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Discovery\Psr18ClientDiscovery;
 use Paynow\Configuration;
@@ -36,7 +38,11 @@ class HttpClient implements HttpClientInterface
         $this->config = $config;
         $this->messageFactory = Psr17FactoryDiscovery::findRequestFactory();
         $this->streamFactory = Psr17FactoryDiscovery::findStreamFactory();
-        $this->client = Psr18ClientDiscovery::find();
+        try {
+            $this->client = Psr18ClientDiscovery::find();
+        } catch (NotFoundException $exception) {
+            $this->client = HttpClientDiscovery::find();
+        }
         $this->url = Psr17FactoryDiscovery::findUrlFactory()->createUri((string)$config->getUrl());
     }
 
@@ -70,8 +76,8 @@ class HttpClient implements HttpClientInterface
      * @param string $url
      * @param array $data
      * @param string|null $idempotencyKey
-     * @return ApiResponse
      * @throws HttpClientException
+     * @return ApiResponse
      */
     public function post(string $url, array $data, ?string $idempotencyKey = null): ApiResponse
     {
@@ -120,14 +126,15 @@ class HttpClient implements HttpClientInterface
 
     /**
      * @param string $url
-     * @throws HttpClientException
+     * @param string|null $query
      * @return ApiResponse
+     * @throws HttpClientException
      */
-    public function get(string $url): ApiResponse
+    public function get(string $url, string $query = null): ApiResponse
     {
         $request = $this->messageFactory->createRequest(
             'GET',
-            $this->url->withPath($url)
+            $query ? $this->url->withPath($url)->withQuery($query) : $this->url->withPath($url)
         );
 
         foreach ($this->prepareHeaders() as $name => $value) {
