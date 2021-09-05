@@ -36,3 +36,6 @@ Initial release
 
 #### 1.0.1 
 Fixing minor issues
+
+#### 1.0.2
+Update: WordPress 5.8 Compatibility
