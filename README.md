@@ -11,11 +11,40 @@ The plugin requires API keys which can be acquired from the Paynow [account sett
 
 ## Installation 
 
-1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly (reccommended).
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Enter your API keys and choose test-mode for making test payments
-4. Visit the Easy Digital Downloads payment gateway settings and select the Payment gateways you want to activate in your checkout page.
-5. Select the payment icons you want to be visible on the checkout page.
+### Classic install
+
+1. Download plugin from [Wordpress.org plugin website](https://wordpress.org/plugins/payment-gateway-for-paynow-on-easy-digital-downloads/)
+2. Upload it into your WordPress installation plugin subfolder: `/wp-content/plugins/`
+3. Login to your WordPress backend
+4. Go to Plugins → Installed Plugins
+5. Activate the Payment Gateway for Paynow on Easy Digital Downloads plugin
+6. Enter your API keys and choose test-mode for making test payments
+7. Visit the Easy Digital Downloads payment gateway settings and select the Payment gateways you want to activate in your checkout page.
+8. Select the payment icons you want to be visible on the checkout page.
+
+### WordPress.org install
+
+1. Open your WordPress backend
+2. Go to Plugins → Installed Plugins
+3. Hit the "Add new" button
+4. Search for "Payment Gateway for Paynow on Easy Digital Downloads"
+5. Hit the "install" button
+6. Activate the plugin
+7. Enter your API keys and choose test-mode for making test payments
+8. Visit the Easy Digital Downloads payment gateway settings and select the Payment gateways you want to activate in your checkout page.
+9. Select the payment icons you want to be visible on the checkout page.
+
+### Github install - more advanced 
+
+1. Download plugin folder from GitHub
+2. Upload it into your WordPress installation plugin subfolder: `/wp-content/plugins/` 
+3. Run composer command `composer update` - it will install all needed dependencies
+4. Login to your WordPress backend
+5. Go to Plugins → Installed Plugins
+6. Activate the Payment Gateway for Paynow on Easy Digital Downloads plugin
+7. Enter your API keys and choose test-mode for making test payments
+8. Visit the Easy Digital Downloads payment gateway settings and select the Payment gateways you want to activate in your checkout page.
+9. Select the payment icons you want to be visible on the checkout page.
 
 ## Frequently Asked Questions 
 
